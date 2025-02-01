@@ -39,7 +39,9 @@ def classify_pellet(moisture, ash, durability, fines, trace_element, net_calorif
     return "Tidak memenuhi standar I1, I2, atau I3"
 
 # UI Streamlit
-st.title("Klasifikasi Kualitas Wood Pellet")
+# UI Streamlit
+st.markdown("<h1 style='text-align: center;'>Klasifikasi Kualitas Wood Pellet</h1>", unsafe_allow_html=True)
+
 
 # Input pengguna
 moisture = st.number_input("Total Moisture (%)", min_value=0.0, max_value=100.0, step=0.1)
